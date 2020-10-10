@@ -1,0 +1,9 @@
+
+<div class="row animated fadeIn mt-5 ">
+<div class="card col-sm-2 col-12 " style="width: 250px;background-color: silver;margin-left: 15px; margin-bottom: 15px; border-radius: 10px;" (click)="verArtista( item )" *ngFor="let item of items" class="card puntero">
+  <img class="card-img-top" style="border-radius: 10px 10px 0 0;height:75%" [src]="item.images | noimage" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center;">{{ item.name }}</h5>
+  </div>
+</div>
+</div>

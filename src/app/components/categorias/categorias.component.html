@@ -1,0 +1,21 @@
+<div class="container-fluid p-4">
+  <h1 style="padding: 0;">Categorias </h1>
+</div>
+<div class="row animated fadeIn ml-5 ">
+<div class="card col-sm-2 col-12 " style="width: 250px;background-color: silver;margin-left: 15px; margin-bottom: 15px; border-radius: 10px;" 
+(click)="verCategoria( item )" *ngFor="let item of categorias" >
+
+  <img class="card-img-top mt-2" style="border-radius: 50%;" [src]="item.icons[0].url" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center;">{{ item.name }}</h5>
+    <p class="card-text">
+                <span *ngFor="let artista of item.artists" class="badge badge-pill badge-success">
+                    {{ artista.name }}
+                </span>
+            </p>
+
+  </div>
+</div>
+</div>
+
+
